@@ -1,7 +1,7 @@
 import java.io.Console;
 import java.util.Scanner;
 
-public class Gradingtest {
+public class Grades {
     public static Scanner CONSOLE = new Scanner(System.in);
     public static int Homework_weight = 0;
     public static int Exam1_weight = 0;
