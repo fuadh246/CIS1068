@@ -1,0 +1,12 @@
+int n = random
+scanner = m
+while( n!=m){
+    scanner = m 
+}
+
+1. get a random number 
+2. get a number from user
+
+3. cheak if they match
+4. if not ask for another number 
+5. if they match print (match)

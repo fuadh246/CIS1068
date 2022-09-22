@@ -1,0 +1,29 @@
+Lab 4 
+A Games
+Due: Monday, September 26
+50 points 
+
+Computer vs player
+
+Moves: Skadis, Tjusig, Klyket, Hovolm, or Pershult.
+
+1. Pershult  beats   Klyket, Skadis
+2. Klyket    beats   Tjusig, Hovolm
+3. Tjusig    beats   Pershult, Skadis
+4. Skadis    Beats   Hovolm, Klyket
+5. Hovolm    beats   Pershult, Tjusig
+
+Conditions
+
+1. If the game is tie computer wins
+2. Should have a while loop to continue the game until entered q or quit (while loop)
+3. @function: Ask the user to pick one until input is valid (scanner)
+4. @function: The computer picks one from the array randomly
+5. @function: to check the winner
+6. @function: Print the winter (show moves)
+7. Store the winner counts
+
+Requirements
+
+1. at least 5 separate functions are defined and used
+2. no global variables. Data is passed to and copied from functions
