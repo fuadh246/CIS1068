@@ -15,10 +15,10 @@ Moves: Skadis, Tjusig, Klyket, Hovolm, or Pershult.
 
 Conditions
 
-1. If the game is tie computer wins
+1. If the game is tie computer wins 
 2. Should have a while loop to continue the game until entered q or quit (while loop)
-3. @function: Ask the user to pick one until input is valid (scanner)
-4. @function: The computer picks one from the array randomly
+3. (DONE) @function: Ask the user to pick one until input is valid (scanner) 
+4. (DONE) @function: The computer picks one from the array randomly 
 5. @function: to check the winner
 6. @function: Print the winter (show moves)
 7. Store the winner counts
