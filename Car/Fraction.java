@@ -24,13 +24,22 @@ public class Fraction {
     }
 
     public Fraction add(Fraction a) {
-        int common_d = d * a.d;
+        int common_d = this.d * a.d;
+        int total_n = ((common_d / this.d) * this.n) + ((common_d / a.d) * a.n);
+        int gdc = gcd(total_n, common_d);
+        n = total_n / gdc;
+        d = common_d / gdc;
+        return new Fraction(n, d);
+    }
 
-        return a;
+    public int gcd(int a, int b) {
+        if (b == 0)
+            return a;
+        return gcd(b, a % b);
     }
 
     public boolean equals(Fraction a) {
-        return n == a.n && d == a.d;
+        return this.n == a.n && this.d == a.d;
     }
 
     public String toString() {
