@@ -14,7 +14,8 @@ public class Test {
     }
 
     public String Student_Test() {
-        String questions_paper = "";
+
+        String questions_paper = "------------- Student copy -------------\n\n";
 
         for (int i = 0; i < questions.length; i++) {
             questions_paper += questions[i].studentFormat();
@@ -23,7 +24,8 @@ public class Test {
     }
 
     public String answer_Key_Test() {
-        String questions_paper = "";
+
+        String questions_paper = "------------- Answer key -------------\n\n";
 
         for (int i = 0; i < questions.length; i++) {
             questions_paper += questions[i].answerFormat();

@@ -6,11 +6,11 @@ public class Task {
     private LocalDateTime whenDue;
     private int estMinsToComplete;
 
-    public Task(String name, int priority, int estMinsToComplete) {
-        this.name = name;
-        this.priority = priority;
-        this.estMinsToComplete = estMinsToComplete;
-    }
+    // public Task(String name, int priority, int estMinsToComplete) {
+    // this.name = name;
+    // this.priority = priority;
+    // this.estMinsToComplete = estMinsToComplete;
+    // }
 
     public Task(String name, int priority, LocalDateTime whenDue, int estMinsToComplete) {
         this.name = name;

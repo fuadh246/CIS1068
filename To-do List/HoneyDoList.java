@@ -1,3 +1,5 @@
+import java.time.LocalDateTime;
+
 public class HoneyDoList {
     private Task tasks[];
     private int numTasks;
@@ -75,5 +77,17 @@ public class HoneyDoList {
 
     public Task getTask(int index) {
         return tasks[index];
+    }
+
+    public Task[] overdueTasks() {
+        Task overDue[] = new Task[numTasks];
+        LocalDateTime now = LocalDateTime.now();
+        for (int i = 0; i < numTasks; i++) {
+            if (tasks[i].getWhenDue().compareTo(now) > 0) {
+                overDue[i] = tasks[i];
+            }
+        }
+        System.out.println();
+        return overDue;
     }
 }
