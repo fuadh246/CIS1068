@@ -1,5 +1,6 @@
 public class Test {
     ObjectiveQuestion[] questions;
+
     public int totalPoints;
 
     public Test(ObjectiveQuestion[] questions) {
