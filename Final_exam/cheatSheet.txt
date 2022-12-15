@@ -1,0 +1,92 @@
+ArrayList:
+
+ArrayList<Type> name = new ArrayList<Type>();
+Name.get(i);
+Name.size();
+Name.remove();
+
+
+Working with file:
+
+
+public class FileProcessor{
+	public static void main(String [] args){
+		try {
+		File inputFile = new File("student.txt");
+		Scanner input = new Scanner(inputFile);
+
+			while(input.hasNextLine()) {
+				System.out.println("> " + input.nextLine());
+			}
+		}
+		catch(FileNotFoundException exception) {
+		System.out.println("Could not find the file 'student.txt'.");
+		}
+	}
+}
+
+
+Searching:
+
+public static int search(int A[], int thingToFind) {
+	for (int i=0; i<A.length; i++) {
+		if (A[i]==thingToFind) {
+			return i;
+		}
+	}
+	/* we didn’t find it. return failure */
+	return -1;
+}
+
+
+Sorted:
+
+Binary search code:
+
+public static int binarySearch(int[] a, int target) {
+	int min = 0;
+	int max = a.length - 1;
+	while (min <= max) {
+		int mid = (min + max) / 2;
+	if (a[mid] < target) {
+		min = mid + 1;
+	} else if (a[mid] > target) {
+		max = mid - 1;
+	} else {
+		return mid; // target found
+	}
+	}
+	return -(min + 1); // target not found
+}
+
+
+// Returns the index of an occurrence of the given value in
+// the given array, or a negative number if not found.
+// Precondition: elements of a are in sorted order
+public static int binarySearch(int[] a, int target) {
+	return binarySearch(a, target, 0, a.length - 1);
+}
+// Recursive helper to implement search behavior.
+private static int binarySearch(int[] a, int target,
+	int min, int max) {
+	if (min > max) {
+		return -1; // target not found
+	} else {
+		int mid = (min + max) / 2;
+		if (a[mid] < target) { // too small; go right
+			return binarySearch(a, target, mid + 1, max);
+		} else if (a[mid] > target) { // too large; go left
+return binarySearch(a, target, min, mid - 1);
+} else {
+return mid; // target found; a[mid] == target
+}
+}
+}
+
+
+Array:
+
+
+
+
+
